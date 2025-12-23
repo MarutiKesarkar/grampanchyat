@@ -1,0 +1,35 @@
+.service-card {
+  background-color: #ffffff;
+  border-color: #dbe0e6;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+  border-color: rgba(var(--bs-primary-rgb), 0.3);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+   img {
+    width: 75%;
+    object-fit: contain;
+   }
+}
+
+.service-card:hover .icon-circle {
+  background-color: var(--bs-primary);
+  color: #ffffff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

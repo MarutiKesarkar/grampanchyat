@@ -1,0 +1,16 @@
+.stat-card {
+  border-left: 4px solid #0d6efd;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+  font-size: 26px;
+  color: #0d6efd;
+  opacity: 0.8;
+}

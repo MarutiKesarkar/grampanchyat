@@ -1,0 +1,17 @@
+<section class="py-5">
+    <div class="container">
+        <h4 class="fw-bold mb-4">मुख्य जबाबदाऱ्या</h4>
+
+        <div>
+            <ul class="list-group list-group-flush mt-3">
+                <li class="list-group-item py-2 border-0 mb-2" *ngFor="let item of items; let i = index"
+                    [ngStyle]="{ 'background-color': item.bgColor }">
+                    <div class="avtar d-flex flex-wrap align-items-center">
+                        <img [src]="item.img" alt="item.title" width="75" class="me-3" />
+                        <strong>{{ item.title }}: </strong> &nbsp; {{ item.description }}
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
