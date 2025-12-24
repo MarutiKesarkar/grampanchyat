@@ -1,0 +1,26 @@
+<section class="py-5">
+  
+    <div class="container">
+          <div class="mb-4 text-center text-md-start">
+        <h4 class="fw-bold mb-1">सेवा / सुविधा / योजना </h4>
+        <p class="text-muted small mb-0">
+            सेवा / सुविधा किंवा योजनांचा थोडक्यात आढावा
+        </p>
+    </div>
+        <div class="row row-wrap">
+            <div class="col-md-6 mb-3" *ngFor="let item of servicesList;">
+                <div class="card p-4">
+                   
+                        <h4 class="card-title fw-bold">{{item.label}}</h4>
+                   
+                        <p class="card-text">{{item.discription}}</p>
+                    
+                    <div class="text-end">
+                        <button class="btn btn-outline-primary rounded-pill">अतिरिक्त माहिती <i class="bi bi-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

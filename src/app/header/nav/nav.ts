@@ -31,6 +31,14 @@ navItems: NavItem[] = [
       route: '/services'
     },
     {
+      label: 'महत्त्वाची ठिकाणे',
+      route: '/places'
+    },
+   {
+      label: 'छायाचित्र दालन',
+      route: '/gallery'
+    },
+    {
       label: 'संपर्क',
       route: '/contact'
     }

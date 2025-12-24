@@ -1,0 +1,159 @@
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="fw-bold fs-4 text-dark mb-0"> आमचे प्रतिनिधी </h2>
+        <p class="text-muted mb-5">
+            उत्तूर समुदायाची सेवा करण्यासाठी निवडून आलेले समर्पित व्यक्ती.
+        </p>
+
+        <div class="row g-4 justify-content-center mb-5">
+            <div class="col-md-3" *ngFor="let item of topMembers; let i = index">
+                <div class="card card-soft p-4">
+                    <div class="align-items-center">
+
+                        <img src="avtar.jpg" class="avatar mb-3" />
+                        <h6 class="fw-bold">{{item.name}}</h6>
+                        <span class="badge bg-success-subtle text-success rounded-4 px-2 mx-auto w-75 fs-6">
+                            {{item.postion}}
+                        </span>
+                        <p class="small text-muted mt-2">
+                            {{item.description}}
+                        </p>
+                    </div>
+                    <div class="card-footer border-0 bg-ligt text-center">
+                        <p class="my-2">संपर्क : {{item.contact}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <h2 class="fw-bold fs-4 text-dark mb-0 text-center mb-5"> प्रभाग सदस्य </h2>
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="col-md-2 mx-2 mb-2" *ngFor="let item of wardMembers; let i = index">
+                <div class="card card-soft p-4 text-center shadow-sm">
+                    <div class="align-items-center">
+                        <img src="avtar.jpg" class="avatar mb-3" />
+
+                        <h6 class="fw-bold">{{item.name}}</h6>
+                        <p class="small text-muted mt-2">
+                            प्रभाग क्रमांक- {{item.wardNo}}
+                        </p>
+                    </div>
+                    <div class="card-footer border-0 bg-ligt text-center">
+                        <p class="my-2">संपर्क : {{item.contact}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="fw-bold fs-4 text-dark mb-0 text-center mb-5"> ग्रामपंचायत कर्मचारी माहिती </h2>
+        <div class="table-responsive">
+            <table class="table table-bordered text-center align-middle shadow-sm table-hover">
+                <thead class="table-success">
+                    <tr>
+                        <th>अ.क्र.</th>
+                        <th>नाव</th>
+                        <th>पद</th>
+                        <th>संपर्क क्रमांक</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>१</td>
+                        <td>श्री. अशोक फाळके</td>
+                        <td>लिपिक</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>२</td>
+                        <td>श्री. संजय पाटील</td>
+                        <td>लिपिक</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>३</td>
+                        <td>श्री. महादेव पाटील</td>
+                        <td>लिपिक</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>४</td>
+                        <td>श्री. महादेव मोरवाडकर</td>
+                        <td>शिपाई</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr class="table-warning fw-bold">
+                        <td></td>
+                        <td>हंगामी कर्मचारी</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>५</td>
+                        <td>श्री. आनंदा कुंभार</td>
+                        <td>सफाई कामगार</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>६</td>
+                        <td>श्री. लक्ष्मण नाईक</td>
+                        <td>सफाई कामगार</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>७</td>
+                        <td>श्री. अमृत रेडेकर</td>
+                        <td>वाहन चालक </td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>८</td>
+                        <td>श्री. राजेंद्र भाईगडे</td>
+                        <td>वाहन चालक </td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>९</td>
+                        <td>श्री. विलास कांबळे</td>
+                        <td>सफाई कामगार</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>१०</td>
+                        <td>श्री. चंद्रकांत इंगळे</td>
+                        <td>सफाई कामगार</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>११</td>
+                        <td>श्री. सुरेश मुळीक</td>
+                        <td>इलेक्ट्रीशियन </td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>१२</td>
+                        <td>सौ. दिपा गुरव</td>
+                        <td>संगणक परिचालिका</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>१३</td>
+                        <td>श्री. बाळू यमगेकर</td>
+                        <td>पाणी पुरवठा</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                    <tr>
+                        <td>१४</td>
+                        <td>श्री. अमोल मुळीक</td>
+                        <td>पाणी पुरवठा</td>
+                        <td> १२३४५६७८९०</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

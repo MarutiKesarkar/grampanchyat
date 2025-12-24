@@ -1,0 +1,78 @@
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.1);
+  transition: box-shadow .3s ease;
+}
+
+.gallery-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.25);
+}
+
+.gallery-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform .7s ease;
+}
+
+.gallery-card:hover .gallery-bg {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.2), transparent);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  transform: translateY(1rem);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.gallery-card:hover .gallery-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(6px);
+  padding: .5rem;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.gallery-card:hover .gallery-icon {
+  opacity: 1;
+}
+
+/* Aspect ratio */
+.ratio-4x5 {
+  aspect-ratio: 4 / 5;
+}
+
+@media (min-width: 576px) {
+  .ratio-sm-4x3 {
+    aspect-ratio: 4 / 3;
+  }
+}

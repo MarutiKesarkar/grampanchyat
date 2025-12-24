@@ -9,31 +9,31 @@ import { Component } from '@angular/core';
 })
 export class AbtApproach {
 villageStats = [
-  { label: 'लोकसंख्या', count: '१५,०००+', icon: 'bi-people' },
-  { label: 'घरे', count: '३,२००', icon: 'bi-house-door' },
-  { label: 'वार्ड', count: '६', icon: 'bi-diagram-3' },
-  { label: 'पुरुष', count: '३८०८', icon: 'bi-gender-male' },
-  { label: 'महिला', count: '३९७२', icon: 'bi-gender-female' },
-  { label: 'कुटुंब संख्या', count: '२२७०', icon: 'bi-house-heart' },
+  { label: 'लोकसंख्या', count: '१५,०००+', icon: 'villageIcons/icon-1.png' },
+  { label: 'घरे', count: '३,२००', icon: 'villageIcons/icon-2.png' },
+  { label: 'वार्ड', count: '६', icon: 'villageIcons/icon-3.png' },
+  { label: 'पुरुष', count: '३८०८', icon: 'villageIcons/icon-4.png' },
+  { label: 'महिला', count: '३९७२', icon: 'villageIcons/icon-22.png' },
+  { label: 'कुटुंब संख्या', count: '२२७०', icon: 'villageIcons/icon-5.png' },
 
-  { label: 'मतदारांची संख्या', count: '७३८३', icon: 'bi-person-check' },
-  { label: 'लागवडी योग्य क्षेत्र', count: '७२३ हेक्टर ७ आर', icon: 'bi-tree' },
-  { label: 'बागायत क्षेत्र', count: '-', icon: 'bi-flower1' },
+  { label: 'मतदारांची संख्या', count: '७३८३', icon: 'villageIcons/icon-7.png' },
+  { label: 'लागवडी योग्य क्षेत्र', count: '७२३ हेक्टर ७ आर', icon: 'villageIcons/icon-8.png' },
+  { label: 'बागायत क्षेत्र', count: '-', icon: 'villageIcons/icon-9.png' },
 
-  { label: 'स्ट्रीट लाईट पोल', count: '५४६', icon: 'bi-lightbulb' },
-  { label: 'अंगणवाडी', count: '४', icon: 'bi-building' },
-  { label: 'जिल्हा परिषद शाळा', count: '२', icon: 'bi-mortarboard' },
+  { label: 'स्ट्रीट लाईट पोल', count: '५४६', icon: 'villageIcons/icon-10.png' },
+  { label: 'अंगणवाडी', count: '४', icon: 'villageIcons/icon-12.png' },
+  { label: 'जिल्हा परिषद शाळा', count: '२', icon: 'villageIcons/icon-23.png' },
 
-  { label: 'पोस्ट ऑफिस', count: '१', icon: 'bi-envelope-paper' },
-  { label: 'तलाठी ऑफिस', count: '१', icon: 'bi-briefcase' },
-  { label: 'आरोग्य उपकेंद्र', count: '१', icon: 'bi-hospital' },
+  { label: 'पोस्ट ऑफिस', count: '१', icon: 'villageIcons/icon-13.png' },
+  { label: 'तलाठी ऑफिस', count: '१', icon: 'villageIcons/icon-14.png' },
+  { label: 'आरोग्य उपकेंद्र', count: '१', icon: 'villageIcons/icon-15.png' },
 
-  { label: 'नळ कनेक्शन', count: '१८७५', icon: 'bi-droplet' },
-  { label: 'सार्वजनिक विहीर', count: '२', icon: 'bi-water' },
-  { label: 'सार्वजनिक बोअर', count: '५', icon: 'bi-water' },
+  { label: 'नळ कनेक्शन', count: '१८७५', icon: 'villageIcons/icon-18.png' },
+  { label: 'सार्वजनिक विहीर', count: '२', icon: 'villageIcons/icon-17.png' },
+  { label: 'सार्वजनिक बोअर', count: '५', icon: 'villageIcons/icon-18-2.png' },
 
-  { label: 'महिला बचत गट', count: '१००+', icon: 'bi-people-fill' },
-  { label: 'प्रधानमंत्री घरकुल', count: '११', icon: 'bi-house-check' }
+  { label: 'महिला बचत गट', count: '१००+', icon: 'villageIcons/icon-19.png' },
+  { label: 'प्रधानमंत्री घरकुल', count: '११', icon: 'villageIcons/icon-21.png' }
 ];
 
 
