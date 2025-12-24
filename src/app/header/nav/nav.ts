@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {  RouterLink, RouterLinkActive } from '@angular/router';
+import { Collapse } from 'bootstrap';
 
 interface NavItem {
   label: string;
@@ -43,4 +44,14 @@ navItems: NavItem[] = [
       route: '/contact'
     }
   ];
+
+
+  closeNavbar() {
+    const navbar = document.getElementById('navbarNav');
+    if (navbar && navbar.classList.contains('show')) {
+      const bsCollapse = new Collapse(navbar, { toggle: false });
+      bsCollapse.hide();
+    }
+  }
+  
 }
