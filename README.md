@@ -1,4 +1,5 @@
-# MyApp
+# Grampanchyat website 
+Grampanchyat website made developed for demo. Used Marathi fonts
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
 
